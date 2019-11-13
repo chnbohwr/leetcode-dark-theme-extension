@@ -14,10 +14,14 @@ function changeFavIcon() {
 };
 
 function changeHeader() {
-  var header = document.querySelector('div[class^="header"]');
-  header.style.background = "#002b36";
+  
   var logo = header.querySelector('img[class^="logo"]');
   logo.parentElement.removeChild(logo);
+}
+
+function changeBackground(){
+  var header = document.querySelector('div[class^="header"]');
+  header.style.background = "#002b36";
 }
 
 
